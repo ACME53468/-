@@ -17,6 +17,13 @@
             max-width: 100%;
             height: auto;
         }
+        .category-nav {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .category-nav::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -27,7 +34,36 @@
         </div>
     </header>
 
+    <!-- Game Categories Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex overflow-x-auto category-nav py-4 space-x-8">
+                <a href="#" class="text-blue-600 font-medium whitespace-nowrap">Action Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Adventure Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Puzzle Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Strategy Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">RPG Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Sports Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Racing Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Shooting Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Horror Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Anime Games</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 whitespace-nowrap">Pixel Games</a>
+            </div>
+        </div>
+    </nav>
+
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Game Type Badge -->
+        <div class="mb-6">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                Action Game
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800 ml-2">
+                Survival
+            </span>
+        </div>
+
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <div class="game-container">
                 <iframe 
